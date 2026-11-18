@@ -21,7 +21,11 @@ server. The agent only reads data – it never changes anything on the host.
    *Settings → Add-ons → Add-on store → ⋮ → Repositories*).
 3. Install **Inventory Agent**, open *Configuration* and enter the server URL and
    the enrollment token shown on the install page.
-4. Enable *Start on boot* and *Watchdog*, then start the add-on.
+4. For SMART of SSDs and hard disks (e.g. a USB SSD on a Raspberry Pi): turn off
+   **Protection mode** on the add-on's *Info* tab. Home Assistant only grants the
+   hardware access below to unprotected add-ons. Without it the agent still
+   reports everything else and lists the disks without SMART values.
+5. Enable *Start on boot* and *Watchdog*, then start the add-on.
 
 The device appears in the Inventory device list within a minute. The enrollment
 token is only used for the first start; the agent keeps its own credential in the
@@ -29,8 +33,9 @@ add-on data and survives restarts and Home Assistant OS updates.
 
 ## Permissions
 
-- **Full hardware access** – required to read SMART data of disks and SD cards.
-  Home Assistant lowers the add-on's security rating because of this.
+- **Full hardware access** – required to read SMART data of disks. Home Assistant
+  applies it only with *Protection mode* turned off and lowers the add-on's
+  security rating because of it.
 - **SYS_RAWIO capability** – SMART of SATA and USB disks (e.g. an SSD on a
   Raspberry Pi) uses ATA pass-through commands, which the kernel only allows
   with this capability. The agent only reads.
