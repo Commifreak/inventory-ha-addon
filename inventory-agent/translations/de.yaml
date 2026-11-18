@@ -1,0 +1,7 @@
+configuration:
+  server_url:
+    name: Server-URL
+    description: Adresse deines Inventory-Servers, z. B. https://inventory.example.com (Settings → Install agents → Home Assistant OS).
+  enrollment_token:
+    name: Registrierungs-Token
+    description: Token vom Inventory-Server (Settings → Install agents). Wird nur beim ersten Start benötigt.

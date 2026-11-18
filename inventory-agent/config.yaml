@@ -1,0 +1,26 @@
+name: Inventory Agent
+version: "0.1.0"
+slug: inventory_agent
+description: Reports this Home Assistant host to an Inventory server – disk health, Home Assistant and add-on updates, Raspberry Pi power and SD card problems.
+url: https://github.com/Commifreak/inventory
+arch:
+  - aarch64
+  - amd64
+  - armv7
+image: ghcr.io/commifreak/inventory-ha-agent
+startup: services
+boot: auto
+# Host network: real interfaces, IP addresses and host name.
+host_network: true
+# Disk health (SMART) and SD card / eMMC data need direct device access.
+full_access: true
+# Kernel messages (undervoltage, SD card and disk errors) from the host journal.
+journald: true
+# Read-only Supervisor API: OS, Core, Supervisor and add-on versions/updates.
+hassio_api: true
+options:
+  server_url: ""
+  enrollment_token: ""
+schema:
+  server_url: url
+  enrollment_token: password
