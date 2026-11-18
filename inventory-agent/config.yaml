@@ -14,6 +14,10 @@ boot: auto
 host_network: true
 # Disk health (SMART) and SD card / eMMC data need direct device access.
 full_access: true
+# SMART of SATA/USB disks uses ATA pass-through, which the kernel only allows
+# with CAP_SYS_RAWIO ("Operation not permitted" otherwise).
+privileged:
+  - SYS_RAWIO
 # Kernel messages (undervoltage, SD card and disk errors) from the host journal.
 journald: true
 # Read-only Supervisor API: OS, Core, Supervisor and add-on versions/updates.

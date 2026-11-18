@@ -31,6 +31,9 @@ add-on data and survives restarts and Home Assistant OS updates.
 
 - **Full hardware access** – required to read SMART data of disks and SD cards.
   Home Assistant lowers the add-on's security rating because of this.
+- **SYS_RAWIO capability** – SMART of SATA and USB disks (e.g. an SSD on a
+  Raspberry Pi) uses ATA pass-through commands, which the kernel only allows
+  with this capability. The agent only reads.
 - **Host network** – real network interfaces and host name.
 - **Journal** – kernel messages for undervoltage and disk errors.
 - **Supervisor API** (read-only role) – versions and available updates.
