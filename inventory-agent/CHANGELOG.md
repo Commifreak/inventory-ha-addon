@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Inventory agent 0.3.1, see https://github.com/Commifreak/inventory/releases/tag/v0.3.1
+
 ## 0.3.0
 
 - Inventory agent 0.3.0, see https://github.com/Commifreak/inventory/releases/tag/v0.3.0

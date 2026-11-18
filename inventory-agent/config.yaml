@@ -1,5 +1,5 @@
 name: Inventory Agent
-version: "0.3.0"
+version: "0.3.1"
 slug: inventory_agent
 description: Reports this Home Assistant host to an Inventory server – disk health, Home Assistant and add-on updates, Raspberry Pi power and SD card problems.
 url: https://github.com/Commifreak/inventory
