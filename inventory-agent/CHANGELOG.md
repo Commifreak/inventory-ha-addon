@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1
+
+- No changes to the agent; this release only changes the Inventory server.
+
+Release notes: https://github.com/Commifreak/inventory/releases/tag/v0.4.1
+
 ## 0.4.0
 
 - Alert when disks count unexpected power losses ([#8](https://github.com/Commifreak/inventory/pull/8))
