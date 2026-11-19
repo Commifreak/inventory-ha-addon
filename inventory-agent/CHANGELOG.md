@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+- Alert when disks count unexpected power losses ([#8](https://github.com/Commifreak/inventory/pull/8))
+- Monitor the reserve blocks of SATA SSDs ([#7](https://github.com/Commifreak/inventory/pull/7))
+- Show memory vendor names instead of JEDEC codes ([#5](https://github.com/Commifreak/inventory/pull/5))
+- Show the wear of SATA SSDs and alert on it ([#3](https://github.com/Commifreak/inventory/pull/3))
+
+Release notes: https://github.com/Commifreak/inventory/releases/tag/v0.4.0
+
 ## 0.3.1
 
 - Inventory agent 0.3.1, see https://github.com/Commifreak/inventory/releases/tag/v0.3.1
