@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.1
+
+- Fix empty SATA ports shown as occupied on Linux and name unknown slot types ([#26](https://github.com/Commifreak/inventory/pull/26))
+- Show signed-in users and last logins on Linux systems without utmp ([#25](https://github.com/Commifreak/inventory/pull/25))
+
+Release notes: https://github.com/Commifreak/inventory/releases/tag/v0.5.1
+
 ## 0.5.0
 
 - Read disks smartctl cannot access via the Windows storage API ([#23](https://github.com/Commifreak/inventory/pull/23))
