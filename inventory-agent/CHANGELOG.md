@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0
+
+- Read disks smartctl cannot access via the Windows storage API ([#23](https://github.com/Commifreak/inventory/pull/23))
+
+Release notes: https://github.com/Commifreak/inventory/releases/tag/v0.5.0
+
 ## 0.4.1
 
 - No changes to the agent; this release only changes the Inventory server.
